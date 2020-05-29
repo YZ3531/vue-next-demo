@@ -13,6 +13,7 @@ export default {
     const inc = () => {
       count.value++
     }
+    // 第二次
 
     return {
       count,
