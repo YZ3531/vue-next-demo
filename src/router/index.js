@@ -1,4 +1,5 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
+import layout from '../components/layout/index.vue'
 import home from '../view/home.vue'
 import setup from '../view/setup.vue'
 import reactive from '../view/reactive.vue'
@@ -27,15 +28,15 @@ import toRaw from '../view/toRaw.vue'
 
 
 import notFond from '../view/notFond.vue'
-const routerHistory = createWebHistory()
+const routerHistory = createWebHashHistory()
 
 const Router = createRouter({
     history:routerHistory,
     routes:[
         {
-            path:'',
-            name:'home',
-            component:home,
+            path:'/',
+            name:'layout',
+            component:layout,
             children:[
                 {
                     path:'setup',
