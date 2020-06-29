@@ -50,5 +50,6 @@ export default {
 .item:hover{
     background-color: #ccc;
     cursor: pointer;
+    transition: .5s linear;
 }
 </style>
