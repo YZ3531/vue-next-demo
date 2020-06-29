@@ -24,6 +24,7 @@ export default {
             'shallowReadonly',
             'shallowRef',
             'toRaw',
+            'router'
         ]
     }
 }

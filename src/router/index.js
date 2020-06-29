@@ -1,6 +1,6 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import layout from '../components/layout/index.vue'
-import home from '../view/home.vue'
+// import home from '../view/home.vue'
 import setup from '../view/setup.vue'
 import reactive from '../view/reactive.vue'
 import ref from '../view/ref.vue'
@@ -24,6 +24,7 @@ import shallowReactive from '../view/shallowReactive.vue'
 import shallowReadonly from '../view/shallowReadonly.vue'
 import shallowRef from '../view/shallowRef.vue'
 import toRaw from '../view/toRaw.vue'
+import router from '../view/router.vue'
 
 
 
@@ -152,6 +153,11 @@ const Router = createRouter({
                     path:'toRaw',
                     name:'toRaw',
                     component:toRaw
+                },
+                {
+                    path:'router',
+                    name:'router',
+                    component:router
                 },
                 {
                     path:'404',
