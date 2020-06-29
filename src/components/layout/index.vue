@@ -1,6 +1,8 @@
 <template>
   <div id="box">
-      <p class="title">XXX</p>
+      <div class="title">
+        <div>DEMO</div>
+      </div>
       <div class="flx">
         <div class="flx-item" v-for="item in list" :key="item">
           <router-link :to="`/`+item">{{item}}</router-link>
@@ -59,7 +61,7 @@ export default {
 </script>
 
 <style scoped>
-#box ,body{
+#box ,body,html{
   padding: 0;
   margin: 0;
   width: 100%;
@@ -76,17 +78,25 @@ h1 {
   font-weight: 700;
   /* position: fixed; */
   width: 100%;
-  background-color: #fff;
+  background-color: #ccc;
   top: 0;
   left: 0;
   height: 8%;
-  line-height: 400%;
+  /* line-height: 400%; */
+  margin: 0;
+  position: relative;
+}
+.title div{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }
 .flx{
   width: 20%;
   float: left;
   overflow: scroll;
-  height: 90%;
+  height: 92%;
 }
 .flx-item{
   height: 50px;
@@ -105,7 +115,7 @@ a:hover{
 }
 .right{
   width:80%;
-  height: 90%;
+  height: 92%;
   overflow: scroll;
   padding: 50px;
   box-sizing: border-box;

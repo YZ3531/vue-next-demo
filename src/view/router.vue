@@ -39,10 +39,12 @@ export default {
 
 <style>
 .item{
-    width: 200px;
-    height: 30px;
+    width: 20%;
+    /* width: 200px;
+    height: 30px; */
     line-height: 30px;
-    margin: 10px auto;
+    margin: 10px 10px;
+    float: left;
     border: 1px solid #ccc;
     list-style-type: none;
     text-align: center;
