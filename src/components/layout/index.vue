@@ -45,34 +45,12 @@ import {
   /**/ 
   isReactive
 } from 'vue'
+import { useStore } from 'vuex'
 
 export default {
   setup() {
-      const list = reactive([
-        'setup',
-        'reactive',
-        'ref',
-        'computed',
-        'readonly',
-        'watchEffect',
-        'watch',
-        'lifeCycle',// 生命周期
-        'DependencyInjection',// 依赖注入
-        'Refs',
-        'unref',
-        'toRef',
-        'toRefs',
-        'isRef',
-        'isProxy',
-        'isReactive',
-        'isReadonly',
-        'customRef',
-        'markRaw',
-        'shallowReactive',
-        'shallowReadonly',
-        'shallowRef',
-        'toRaw',
-      ])
+    const store = useStore()
+    const list = computed(()=>store.state.Config.RouterList)
     return {
       list
     }
@@ -122,7 +100,7 @@ a{
 }
 a:hover{
   color: red;
-  font-size: 24px;
+  /* font-size: 24px; */
   transition: linear .2s;
 }
 .right{

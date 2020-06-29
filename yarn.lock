@@ -4288,6 +4288,11 @@ vue@^3.0.0-beta.14:
     "@vue/runtime-dom" "3.0.0-beta.15"
     "@vue/shared" "3.0.0-beta.15"
 
+vuex@^4.0.0-beta.2:
+  version "4.0.0-beta.2"
+  resolved "https://registry.npmjs.org/vuex/-/vuex-4.0.0-beta.2.tgz#8ced720de70e5549a72b0982199cae3ecc687482"
+  integrity sha512-IxLyd/CIyQSF5o6yYGqAOmTTRoXo1lboTPPDvfFr/bib1VCpfgy1G7QBp2u7fwVrxfbEhJ5JYOj6+jQMYFfA0g==
+
 watchpack@^1.6.0:
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/watchpack/-/watchpack-1.6.0.tgz#4bc12c2ebe8aa277a71f1d3f14d685c7b446cd00"
