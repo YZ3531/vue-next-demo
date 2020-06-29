@@ -122,7 +122,7 @@ a{
 }
 a:hover{
   color: red;
-  font-size: 24px;
+  /* font-size: 24px; */
   transition: linear .2s;
 }
 .right{
