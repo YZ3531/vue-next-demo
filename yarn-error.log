@@ -1,5 +1,5 @@
 Arguments: 
-  /usr/local/bin/node /usr/local/bin/yarn add markedjs
+  /usr/local/bin/node /usr/local/bin/yarn add vue-sidebar-menu --save
 
 PATH: 
   /Library/Frameworks/Python.framework/Versions/3.8/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Library/Frameworks/Python.framework/Versions/3.8/bin
@@ -14,7 +14,7 @@ Platform:
   darwin x64
 
 Trace: 
-  Error: https://registry.npmjs.org/markedjs: ETIMEDOUT
+  Error: https://registry.npmjs.org/vue-sidebar-menu: ETIMEDOUT
       at Timeout._onTimeout (/usr/local/lib/node_modules/yarn/lib/cli.js:141408:19)
       at ontimeout (timers.js:436:11)
       at tryOnTimeout (timers.js:300:5)
@@ -30,7 +30,8 @@ npm manifest:
     },
     "dependencies": {
       "vue": "^3.0.0-beta.14",
-      "vue-router": "^4.0.0-alpha.12"
+      "vue-router": "^4.0.0-alpha.12",
+      "vuex": "^4.0.0-beta.2"
     },
     "devDependencies": {
       "@vue/compiler-sfc": "^3.0.0-beta.14",
@@ -4338,6 +4339,11 @@ Lockfile:
       "@vue/compiler-dom" "3.0.0-beta.15"
       "@vue/runtime-dom" "3.0.0-beta.15"
       "@vue/shared" "3.0.0-beta.15"
+  
+  vuex@^4.0.0-beta.2:
+    version "4.0.0-beta.2"
+    resolved "https://registry.npmjs.org/vuex/-/vuex-4.0.0-beta.2.tgz#8ced720de70e5549a72b0982199cae3ecc687482"
+    integrity sha512-IxLyd/CIyQSF5o6yYGqAOmTTRoXo1lboTPPDvfFr/bib1VCpfgy1G7QBp2u7fwVrxfbEhJ5JYOj6+jQMYFfA0g==
   
   watchpack@^1.6.0:
     version "1.6.0"
